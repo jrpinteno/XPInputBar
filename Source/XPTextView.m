@@ -95,6 +95,7 @@
 
 - (void) clearText {
 	self.text = nil;
+	self.placeholderLabel.hidden = NO;
 
 	id<XPTextViewDelegate> delegate = self.externalDelegate;
 	if ([delegate respondsToSelector:@selector(textViewDidClearText:)]) {
